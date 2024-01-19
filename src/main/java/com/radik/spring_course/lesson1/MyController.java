@@ -1,4 +1,4 @@
-package com.radik.spring_course.lesson4;
+package com.radik.spring_course.lesson1;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
