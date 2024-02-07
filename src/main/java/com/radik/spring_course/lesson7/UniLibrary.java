@@ -8,4 +8,7 @@ public class UniLibrary extends AbstractLibrary{
     public void getBook() {
         System.out.println("Мы берём книгу из UniLibrary");
     }
+    public void addBook(String name){
+        System.out.println(name + " добавляет книгу в UniLibrary");
+    }
 }
