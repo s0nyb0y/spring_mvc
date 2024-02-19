@@ -19,12 +19,7 @@ public class Test {
             session.beginTransaction();
             session.createQuery(" update Employee set salary = 1000" +
                     " where department = 'HR'").executeUpdate();
-            List<Employee> employees = session.createQuery("from Employee where name = 'Zaur'").getResultList();
-            for (Employee emp : employees) {
-                if (emp.getName().equals("Zaur")) {
-                    session.delete(emp);
-                }
-            }
+            session.createQuery(" delete Employee where name = 'Zaur'").executeUpdate();
             List<Employee> emps = session.createQuery(" from Employee").getResultList();
             for (Employee emp:emps){
                 System.out.println(emp);
