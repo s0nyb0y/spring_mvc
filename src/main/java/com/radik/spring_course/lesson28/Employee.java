@@ -9,6 +9,7 @@ public class Employee {
     private String department;
     private int salary;
     private String carBrand;
+    private String[] languages;
     private Map<String,String>departments = new HashMap<>();
     private Map<String,String>carBrands = new HashMap<>();
     {
@@ -22,6 +23,14 @@ public class Employee {
     }
 
     public Employee() {
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
     }
 
     public Map<String, String> getCarBrands() {
