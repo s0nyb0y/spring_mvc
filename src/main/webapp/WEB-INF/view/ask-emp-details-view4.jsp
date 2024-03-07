@@ -19,9 +19,11 @@
     <br><br>
     Which car do you want?
     <br><br>
-    BMW: <form:radiobutton path="carBrand" value="BMW"/>
-    AUDI: <form:radiobutton path="carBrand" value="AUDI"/>
-    SKODA: <form:radiobutton path="carBrand" value="SKODA"/>
+<%--    BMW: <form:radiobutton path="carBrand" value="BMW"/>--%>
+<%--    AUDI: <form:radiobutton path="carBrand" value="AUDI"/>--%>
+<%--    SKODA: <form:radiobutton path="carBrand" value="SKODA"/>--%>
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+    <br><br>
     <input type="submit" value="ok">
 </form:form>
 

@@ -10,13 +10,26 @@ public class Employee {
     private int salary;
     private String carBrand;
     private Map<String,String>departments = new HashMap<>();
+    private Map<String,String>carBrands = new HashMap<>();
     {
         departments.put("Information Technology","IT");
         departments.put("Human Resources","HR");
         departments.put("Sales","Sales");
+
+        carBrands.put("BMW","BMW");
+        carBrands.put("AUDI","AUDI");
+        carBrands.put("SKODA","SKODA");
     }
 
     public Employee() {
+    }
+
+    public Map<String, String> getCarBrands() {
+        return carBrands;
+    }
+
+    public void setCarBrands(Map<String, String> carBrands) {
+        this.carBrands = carBrands;
     }
 
     public String getCarBrand() {
