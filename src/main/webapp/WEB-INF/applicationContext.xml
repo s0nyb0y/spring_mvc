@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="com.radik.spring_course.lesson29" />
+    <context:component-scan base-package="com.radik.spring_course.lesson30" />
 
     <mvc:annotation-driven/>
 
